@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Truth Table Generator</title>
+
+    <link rel="stylesheet" href="css/truth-table.css">
+  </head>
+  <body>
+
+    <h1>Truth Table Generator</h1>
+
+    
+    <div>
+      <input id="inputExpression" type="text" placeholder="Enter expression" spellcheck="false" value="">
+      <button id="calculate" type="button" onclick="calculate()">Generate</button>
+    </div>
+
+    
+
+    <div id="area-for-TT">
+
+    </div>
+
+    <div id="rules">
+      <h2>Valid Symbols:</h2>
+      <table>
+        <tr>
+          <th>Operator</th>
+          <th>Symbols</th>
+        </tr>
+        <tr class="even">
+          <td>And</td>
+          <td>&, &&, ^</td>
+        </tr>
+        <tr class="odd">
+          <td>Or</td>
+          <td>|, ||</td>
+        </tr>
+        <tr class="even">
+          <td>Not</td>
+          <td>!, ~</td>
+        </tr>
+        <tr class="odd">
+          <td>Implication</td>
+          <td>->, =></td>
+        </tr>
+        <tr class="even">
+          <td>Equivalence</td>
+          <td><->, <=></td>
+        </tr>
+        <tr class="odd">
+          <td>True</td>
+          <td>T</td>
+        </tr>
+        <tr class="even">
+          <td>False</td>
+          <td>F</td>
+        </tr>
+        <tr class="odd">
+          <td>Variables</td>
+          <td>'a' to 'z' and 'A' to 'Z'(Except T and F)</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="devName">Developed by Jamshed</div>
+
+  <script src="javascript/truth-table.js" charset="utf-8"></script>
+
+  </body>
+</html>
